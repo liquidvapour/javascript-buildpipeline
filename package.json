@@ -1,0 +1,19 @@
+{
+  "name": "javascript-buildpipeline",
+  "version": "1.0.0",
+  "description": "Respository to support a talk on JavaScript Build Pipelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liquidvapour/javascript-buildpipeline.git"
+  },
+  "author": "Ra-el Peters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liquidvapour/javascript-buildpipeline/issues"
+  },
+  "homepage": "https://github.com/liquidvapour/javascript-buildpipeline#readme"
+}
