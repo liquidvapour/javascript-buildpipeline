@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "http-server ./content"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/liquidvapour/javascript-buildpipeline/issues"
   },
-  "homepage": "https://github.com/liquidvapour/javascript-buildpipeline#readme"
+  "homepage": "https://github.com/liquidvapour/javascript-buildpipeline#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
