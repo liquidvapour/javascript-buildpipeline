@@ -1,10 +1,21 @@
+
+
 window.onload = function(e) {
-    var elem = document.createElement("div");
-    document.body.appendChild(elem);
-    var i;
-    for (i = 0; i < 10; i++) {
-        var child = document.createElement("div");
-        child.innerText = "foo: " + i;
-        elem.appendChild(child);
-    }
+    var elem = addDivTo(document.body);
+    doXTimes(10, function(i) {
+        addDivTo(elem).innerText = "foo: " + i;
+    });
 };
+
+function doXTimes(numberOfIterations, thingToDo) {
+    var i;
+    for (i = 0; i < numberOfIterations; i++) {
+        thingToDo(i);
+    }
+}
+
+function addDivTo(rootElement) {
+    var elem = document.createElement("div");
+    rootElement.appendChild(elem); 
+    return elem;
+}
