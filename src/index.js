@@ -1,11 +1,16 @@
 
 
 window.onload = function(e) {
-    var elem = addDivTo(document.body);
-    doXTimes(10, function(i) {
+    renderList(document.body);
+};
+
+
+function renderList(root) {
+    var elem = addDivTo(root);
+    doXTimes(10, function (i) {
         addDivTo(elem).innerText = "foo: " + i;
     });
-};
+}
 
 function doXTimes(numberOfIterations, thingToDo) {
     var i;
